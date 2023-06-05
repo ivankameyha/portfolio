@@ -1,0 +1,280 @@
+.home-container {
+  width: 80%;
+  margin: auto;
+}
+
+.home-header {
+  display: flex;
+  margin-top: 80px;
+  margin-bottom: 100px;
+  position: relative;
+}
+
+span {
+  color: var(--second-color);
+}
+
+/* PRIMER CONTENEDOR DE TARJETA */
+
+.card-style-one {
+  background: linear-gradient(300deg, var(--third-color), var(--fourth-color));
+  border: 1px solid #232323;
+  border-radius: 30px;
+  padding: 40px 85px 0 40px;
+  width: 38%;
+  height: 275px;
+  display: flex;
+  margin-right: 20px;
+  box-shadow: 3px 6px 7px rgba(0, 0, 0, 0.9);
+}
+
+.card-style-one .profile {
+  width: 230px;
+  position: absolute;
+  left: 280px;
+}
+
+.card-style-one .profile h4 {
+  color: var(--text-color);
+  font-weight: 400;
+  text-transform: uppercase;
+  font-size: 14px;
+}
+
+.card-style-one .profile h1 {
+  font-weight: 700;
+  font-size: 40px;
+  margin-top: -20px;
+  margin-bottom: 0px;
+}
+
+.card-style-one .profile p {
+  color: var(--text-color);
+  font-weight: 200;
+}
+
+.img-profile {
+  width: 220px;
+  height: 220px;
+  margin-top: 10px;
+  object-fit: cover;
+  border-top-left-radius: 15%;
+  border-bottom-right-radius: 15%;
+  filter: brightness(70%);
+  box-shadow: 3px 6px 7px rgba(0, 0, 0, 0.9);
+}
+
+/* SEGUNDO CONTENEDOR DE TARJETA */
+
+/* TARJETA FRASE */
+.typewriter-text {
+  width: 75%;
+  overflow: hidden; /* Oculta el texto que se desborda */
+  border-right: 0.15em solid #fff; /* Línea vertical que simula el cursor */
+  white-space: nowrap; /* Evita que el texto se desplace a la siguiente línea */
+  animation: typing 3.5s steps(40, end),
+    /* Animación de escritura */ blink-caret 0.75s step-end infinite; /* Animación del cursor parpadeante */
+}
+
+/* Animación de escritura */
+@keyframes typing {
+  from {
+    width: 0;
+  } /* Ancho inicial (texto oculto) */
+  to {
+    width: 75%;
+  } /* Ancho final (texto completo) */
+}
+
+/* Animación del cursor parpadeante */
+@keyframes blink-caret {
+  from,
+  to {
+    border-color: transparent;
+  } /* Cursor invisible */
+  50% {
+    border-color: #fff;
+  } /* Cursor visible */
+}
+
+/* TARJETAS ABOUTME Y WORKS */
+
+.cards {
+  position: absolute;
+  right: 0;
+  width: 47.5%;
+  height: 100%;
+}
+
+.card-style-two {
+  background: linear-gradient(300deg, var(--third-color), var(--fourth-color));
+  border: 1px solid #232323;
+  border-radius: 50px;
+  padding: 2px 25px;
+  color: var(--text-color);
+  font-weight: 400;
+  text-transform: uppercase;
+  font-size: 14px;
+  box-shadow: 3px 6px 7px rgba(0, 0, 0, 0.9);
+}
+
+.cards::after {
+  position: relative;
+}
+
+.cards .cards-content {
+  display: flex;
+  width: 100%;
+  position: absolute;
+  bottom: 0;
+}
+
+.card-style-three {
+  background: linear-gradient(300deg, var(--third-color), var(--fourth-color));
+  border: 1px solid #232323;
+  border-radius: 30px;
+  padding: 10px;
+  width: 220px;
+  height: 220px;
+  box-shadow: 3px 6px 7px rgba(0, 0, 0, 0.9);
+}
+
+.cards-content .card-style-three:nth-child(2) {
+  margin-left: 30px;
+}
+
+.card-style-three img {
+  width: 200px;
+  height: 132px;
+  border-radius: 5px;
+  box-shadow: 3px 6px 7px rgba(0, 0, 0, 0.9);
+  margin-top: 10px;
+  margin-left: 10px;
+  filter: brightness(70%);
+  object-fit: cover;
+}
+
+.card-style-three h5 {
+  color: var(--text-color);
+  margin-top: 5px;
+  margin-left: 10px;
+}
+
+.card-style-three h3 {
+  margin-top: -15px;
+  margin-left: 10px;
+}
+
+.card-style-three button {
+  position: absolute;
+  background-color: inherit;
+  border: none;
+  color: var(--text-color);
+  font-size: 25px;
+  margin-left: 160px;
+  margin-top: -40px;
+  transition: 0.3s ease;
+}
+
+.card-style-three button:hover {
+  cursor: pointer;
+  color: #fff;
+  font-size: 30px;
+}
+
+
+/* TERCER CONTENEDOR DE TARJETAS */
+
+.home-main {
+  height: 100vh;
+  display: flex;
+  align-items: center;
+}
+
+.more-cards {
+  width: 100%;
+}
+
+.row-one {
+  display: flex;
+  justify-content: space-between;
+}
+
+.row-one .card-style-three:nth-child(2) {
+  width: 500px;
+}
+
+.row-one .card-style-three p {
+  font-size: 80px;
+  margin: 20px 0 25px 10px;
+}
+
+.row-one .card-style-three ul {
+  display: flex;
+  text-decoration: none;
+  list-style: none;
+  font-size: 35px;
+  margin: 50px 0 50px;
+}
+
+.row-one .card-style-three:nth-child(2) ul li {
+  margin-right: 55px;
+}
+
+.row-one .card-style-three:nth-child(2) button {
+  margin-left: 440px;
+}
+
+.row-one .icons-profiles {
+  background: linear-gradient(300deg, var(--third-color), #3f3f3f);
+  box-shadow: 3px 6px 7px rgba(0, 0, 0, 0.9);
+  border-radius: 30px;
+  font-size: 25px;
+  text-align: center;
+  width: 120px;
+  height: 120px;
+  margin: 10px 0 15px 10px;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+  align-content: center;
+}
+
+.row-one .icons-profiles i {
+  margin: 10px;
+}
+
+.row-two {
+  display: flex;
+  justify-content: space-between;
+  margin-top: 30px;
+}
+
+.row-two .card-style-three {
+  width: 496px;
+}
+
+.row-two .card-style-three:nth-child(1) {
+  text-align: center;
+}
+
+.row-two .card-style-three:nth-child(1) h1 {
+  margin-top: 50px;
+  font-size: 25px;
+}
+
+.row-two .card-style-three:nth-child(1) h4 {
+  padding: 0 20px;
+}
+
+.row-two .card-style-three:nth-child(2) h1 {
+  font-size: 45px;
+  margin-top: 70px;
+  margin-left: 10px;
+}
+
+.row-two .card-style-three:nth-child(2) button {
+  margin-left: 435px;
+}
+
