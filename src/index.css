@@ -11,3 +11,7 @@ body {
     color: #fff;
     font-family: 'Lexend Deca', sans-serif;
 }
+
+html {
+  scroll-behavior: smooth;
+}

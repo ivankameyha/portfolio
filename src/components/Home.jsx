@@ -82,7 +82,7 @@ export const Home = () => {
                 </li>
               </ul>
               <h5>Specialization</h5>
-              <h3>Servicios que ofrezco</h3>
+              <h3>Lenguajes que utilizo</h3>
               <Link to="/about">
                 <button>
                   <i className="fa-solid fa-circle-nodes"></i>
