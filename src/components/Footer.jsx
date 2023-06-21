@@ -5,7 +5,7 @@ export const Footer = () => {
         <>
         <footer className="footer">
             <h2>KMY</h2>
-            <p>Todos los derechos reservados por <a href='#'><span>Ivan Kameyha</span></a> <br />&copy; 2023</p>
+            <p>Todos los derechos reservados por <a href='/'><span>Ivan Kameyha</span></a> <br />&copy; 2023</p>
         </footer>
         </>
     )

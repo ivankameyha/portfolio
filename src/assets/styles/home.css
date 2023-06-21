@@ -137,6 +137,7 @@ span {
   width: 220px;
   height: 220px;
   box-shadow: 3px 6px 7px rgba(0, 0, 0, 0.9);
+  transition: transform 0.2s;
 }
 
 .cards-content .card-style-three:nth-child(2) {
@@ -179,7 +180,12 @@ span {
 .card-style-three button:hover {
   cursor: pointer;
   color: #fff;
-  font-size: 30px;
+  transform: rotate(180deg);
+}
+
+.home-container .card-style-three:hover {
+  cursor: pointer;
+  transform: scale(1.05);
 }
 
 

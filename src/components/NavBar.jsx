@@ -2,8 +2,10 @@ import { Link } from 'react-router-dom'
 import '../assets/styles/navbar.css'
 
 export const NavBar = () => {
+
+    
     return (
-        <>
+        <div className='nav-container'>
             <nav className="navigation-bar">
                 <section className="navigation-logo">
                     <h1>KMY</h1>
@@ -15,6 +17,6 @@ export const NavBar = () => {
                 </ul>
                 <Link to="/contact"><button className="btn-contact">Contacto</button></Link>
             </nav>
-        </>
+        </div>
     )
 }

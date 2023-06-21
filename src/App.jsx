@@ -6,8 +6,23 @@ import { Contact } from './components/Contact'
 import { NavBar } from './components/NavBar'
 import {Footer} from './components/Footer'
 import './App.css'
+import { useEffect } from 'react'
 
 export const App = () => {
+
+  useEffect(() => {
+    const handleScroll = () => {
+      const nav = document.querySelector('.navigation-bar');
+      nav.classList.toggle('active', window.scrollY > 0);
+    };
+
+    window.addEventListener('scroll', handleScroll);
+
+    return () => {
+      window.removeEventListener('scroll', handleScroll);
+    };
+  }, []);
+
   return (
     <div>
       <NavBar></NavBar>

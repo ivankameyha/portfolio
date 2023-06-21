@@ -2,9 +2,19 @@ import "../assets/styles/home.css";
 import profile from "../assets/images/profile.jpg";
 import coffee from "../assets/images/coffee.jpg";
 import business from "../assets/images/business.jpg";
-import { Link } from "react-router-dom";
+import { Link, useNavigate } from "react-router-dom";
 
 export const Home = () => {
+  const navigate = useNavigate();
+
+  const handleNavigate = (param) => {
+    navigate("/" + param);
+  };
+
+  const handleNavigateLink = () => {
+    window.open("https://www.linkedin.com/in/ivan-kameyha/", "_blank");
+  };
+
   return (
     <div className="home-container">
       <section className="home-header">
@@ -24,7 +34,10 @@ export const Home = () => {
             </p>
           </div>
           <div className="cards-content">
-            <div className="card-style-three">
+            <div
+              className="card-style-three"
+              onClick={() => handleNavigate("about")}
+            >
               <img src={coffee} alt="" />
               <h5>More about me</h5>
               <h3>Experiencia</h3>
@@ -34,7 +47,10 @@ export const Home = () => {
                 </button>
               </Link>
             </div>
-            <div className="card-style-three">
+            <div
+              className="card-style-three"
+              onClick={() => handleNavigate("works")}
+            >
               <img src={business} alt="" />
               <h5>Showcase</h5>
               <h3>Proyectos</h3>
@@ -51,19 +67,28 @@ export const Home = () => {
       <section className="home-main">
         <main className="more-cards">
           <div className="row-one">
-            <div className="card-style-three">
+            <div
+              className="card-style-three"
+              onClick={handleNavigateLink}
+            >
               <p>
                 <i class="fa-brands fa-linkedin"></i>
               </p>
               <h5>More information</h5>
               <h3>Linkedin</h3>
-              <Link to="/about">
+              <Link
+                to="https://www.linkedin.com/in/ivan-kameyha/"
+                target="_blank"
+              >
                 <button>
                   <i className="fa-solid fa-circle-nodes"></i>
                 </button>
               </Link>
             </div>
-            <div className="card-style-three">
+            <div
+              className="card-style-three"
+              onClick={() => handleNavigate("about")}
+            >
               <ul>
                 <li>
                   <i class="fa-solid fa-laptop"></i>
@@ -89,14 +114,24 @@ export const Home = () => {
                 </button>
               </Link>
             </div>
-            <div className="card-style-three">
+            <div
+              className="card-style-three"
+              onClick={() => handleNavigate("contact")}
+            >
               <section className="icons-profiles">
-                <label><i class="fa-brands fa-square-facebook"></i><i class="fa-brands fa-instagram"></i></label><br />
-                <label><i class="fa-brands fa-twitter"></i><i class="fa-brands fa-github"></i></label>
+                <label>
+                  <i class="fa-brands fa-square-facebook"></i>
+                  <i class="fa-brands fa-instagram"></i>
+                </label>
+                <br />
+                <label>
+                  <i class="fa-brands fa-twitter"></i>
+                  <i class="fa-brands fa-github"></i>
+                </label>
               </section>
               <h5>More information</h5>
               <h3>Perfiles</h3>
-              <Link to="/about">
+              <Link to="/contact">
                 <button>
                   <i className="fa-solid fa-circle-nodes"></i>
                 </button>
@@ -112,11 +147,14 @@ export const Home = () => {
                 avíseme en redes sociales.
               </h4>
             </div>
-            <div className="card-style-three">
+            <div
+              className="card-style-three"
+              onClick={() => handleNavigate("contact")}
+            >
               <h1>
                 Let's <br /> work <span>together.</span>
               </h1>
-              <Link to="/about">
+              <Link to="/contact">
                 <button>
                   <i className="fa-solid fa-circle-nodes"></i>
                 </button>

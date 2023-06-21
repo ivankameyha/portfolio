@@ -1,0 +1,26 @@
+.works-container {
+  width: 90%;
+  margin: auto;
+}
+
+.works-container h1 {
+  font-size: 65px;
+  text-align: center;
+}
+
+.all-projects {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-evenly;
+}
+
+.card-content {
+  display: flex;
+  flex-direction: column;
+  background: linear-gradient(300deg, var(--third-color), var(--fourth-color));
+  border: 1px solid #232323;
+  border-radius: 30px;
+  padding-bottom: 30px;
+  box-shadow: 3px 6px 7px rgba(0, 0, 0, 0.9);
+  overflow: hidden;
+}

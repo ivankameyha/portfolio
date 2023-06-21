@@ -1,0 +1,71 @@
+.contact-container {
+  width: 80%;
+  margin: auto;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-top: 50px;
+  margin-bottom: 100px;
+}
+
+.social-info ul {
+  list-style: none;
+  font-size: 50px;
+}
+
+.social-info li {
+  margin-bottom: 20px;
+}
+
+.social-info a {
+  display: inline-block;
+  transition: transform 0.3s;
+}
+
+.social-info a:hover {
+  transform: scale(1.5);
+}
+
+.contact-info {
+  background: linear-gradient(300deg, var(--third-color), var(--fourth-color));
+  border: 1px solid #232323;
+  border-radius: 30px;
+  padding: 30px;
+  box-shadow: 3px 6px 7px rgba(0, 0, 0, 0.9);
+  width: 70%;
+}
+
+.contact-info h1 {
+  font-size: 40px;
+  margin: 0 0 20px;
+}
+
+form {
+  text-align: center;
+}
+
+form input,
+textarea {
+  color: white;
+  font-size: 18px;
+  width: 90%;
+  margin: 5px 0;
+  padding: 15px;
+  background: linear-gradient(300deg, var(--third-color), #3f3f3f);
+  border-radius: 10px;
+  border: none;
+}
+
+.no-resize {
+  resize: none;
+}
+
+.btn-send {
+  transition: transform 0.3s ease;
+  cursor: pointer;
+}
+
+.btn-send:hover {
+  transform: scale(1.1);
+  background: linear-gradient(300deg, var(--third-color), #525252);
+}
