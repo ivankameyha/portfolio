@@ -12,7 +12,7 @@ export const App = () => {
 
   useEffect(() => {
     const handleScroll = () => {
-      const nav = document.querySelector('.navigation-bar');
+      const nav = document.querySelector('.nav-bar');
       nav.classList.toggle('active', window.scrollY > 0);
     };
 

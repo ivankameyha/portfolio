@@ -1,22 +1,32 @@
-import { Link } from 'react-router-dom'
-import '../assets/styles/navbar.css'
+import { Link } from "react-router-dom";
+import "../assets/styles/navbar.css";
+import { useState } from "react";
 
 export const NavBar = () => {
 
-    
-    return (
-        <div className='nav-container'>
-            <nav className="navigation-bar">
-                <section className="navigation-logo">
-                    <h1>KMY</h1>
-                </section>
-                <ul className="navigation-menu">
-                    <li><Link to="/">Inicio</Link></li>
-                    <li><Link to="/about">Sobre mi</Link></li>
-                    <li><Link to="/works">Trabajos</Link></li>
-                </ul>
-                <Link to="/contact"><button className="btn-contact">Contacto</button></Link>
-            </nav>
-        </div>
-    )
-}
+  const [isMenuOpen, setMenuOpen] = useState(false);
+
+  const handleToggleMenu = () => {
+    setMenuOpen(!isMenuOpen);
+  };
+
+  return (
+    <div className='nav-container'>
+        <nav className="nav-bar">
+          <div className="toggle-menu" id="toggle-menu" onClick={handleToggleMenu}>
+            <i class="fa-solid fa-bars"></i>
+          </div>
+            <Link to="/portfolio" className="nav-logo">
+                <h1>KMY</h1>
+            </Link>
+            <ul className={`nav-menu ${isMenuOpen ? "nav-menu--show" : ""}`} id="nav-menu">
+                <li><Link to="/portfolio">Inicio</Link></li>
+                <li><Link to="/about">Sobre mi</Link></li>
+                <li><Link to="/works">Trabajos</Link></li>
+                <li><a href='https://drive.google.com/file/d/1vfJIMCUhsw9FN3WllD6Xo8Z8AV0VMC72/view?usp=sharing' target='_blank'>CV</a></li>
+            </ul>
+            <Link to="/contact"><button className="btn-contact">Contacto</button></Link>
+        </nav>
+    </div>
+  );
+};
