@@ -12,7 +12,7 @@ export const NavBar = () => {
 
   return (
     <div className='nav-container'>
-        <nav className="nav-bar">
+        <nav className={`nav-bar ${isMenuOpen ? "nav-bar--show" : ""}`}>
           <div className="toggle-menu" id="toggle-menu" onClick={handleToggleMenu}>
             <i class="fa-solid fa-bars"></i>
           </div>
