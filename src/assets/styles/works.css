@@ -54,3 +54,14 @@
 .card-content button:hover {
   background: #6883fa;
 }
+
+.card-content img {
+  height: 170px;
+}
+
+.card-content p {
+  position: absolute;
+  margin-top: 230px;
+  margin-left: 80px;
+  font-size: 14px;
+}

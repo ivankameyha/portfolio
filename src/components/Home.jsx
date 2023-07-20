@@ -1,5 +1,5 @@
 import "../assets/styles/home.css";
-import profile from "../assets/images/profile.jpg";
+import avatar1 from "../assets/images/avatar1.jpg";
 import coffee from "../assets/images/coffee.jpg";
 import business from "../assets/images/business.jpg";
 import { Link, useNavigate } from "react-router-dom";
@@ -19,10 +19,10 @@ export const Home = () => {
     <div className="home-container">
       <section className="home-header">
         <div className="card-style-one">
-          <img className="img-profile" src={profile} alt="" />
+          <img className="img-profile" src={avatar1} alt="" />
           <header className="profile">
             <h4>A Software Developer</h4>
-            <h1>Ivan Kameyha</h1>
+            <h1>Iván Kameyha</h1>
             <p>Hey there! This is my personal portfolio.</p>
           </header>
         </div>

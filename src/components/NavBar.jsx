@@ -23,7 +23,7 @@ export const NavBar = () => {
                 <li><Link to="/portfolio">Inicio</Link></li>
                 <li><Link to="/about">Sobre mi</Link></li>
                 <li><Link to="/works">Trabajos</Link></li>
-                <li><a href='https://drive.google.com/file/d/1vfJIMCUhsw9FN3WllD6Xo8Z8AV0VMC72/view?usp=sharing' target='_blank'>CV</a></li>
+                <li><a href='https://drive.google.com/file/d/1DxmEwEBUrtMJem9g1lYS_Hy19uyi5Ksx/view?usp=sharing' target='_blank'>CV</a></li>
             </ul>
             <Link to="/contact"><button className="btn-contact">Contacto</button></Link>
         </nav>

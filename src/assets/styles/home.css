@@ -103,6 +103,7 @@ span {
   border-bottom-right-radius: 15%;
   filter: brightness(70%);
   box-shadow: 3px 6px 7px rgba(0, 0, 0, 0.9);
+  background: rgb(190, 190, 190);
 }
 
 @media (max-width: 720px) {

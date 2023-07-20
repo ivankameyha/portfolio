@@ -1,23 +1,23 @@
 import "../assets/styles/about.css";
-import profile from "../assets/images/profile.jpg";
+import avatar2 from "../assets/images/avatar2.jpg";
 
 export const About = () => {
   return (
     <div className="about-container">
       <section className="about-header">
         <div className="about-me">
-          <h2>Ivan Kameyha &#x1F4BB;</h2>
+          <h2>Iván Kameyha &#x1F4BB;</h2>
           <div className="card-style-three">
             <i class="fa-solid fa-code"></i>
             <p>
-              Soy Técnico en programación, actualmente tengo 20 años de edad. Me
+              Soy Técnico Universitario en programación, actualmente tengo 20 años de edad. Me
               he especializado en el área de desarrollo web y desarrollo de
               aplicaciones de escritorio.
             </p>
           </div>
         </div>
         <div className="card-style-one">
-          <img className="img-profile" src={profile} alt="" />
+          <img className="img-profile" src={avatar2} alt="" />
         </div>
       </section>
       <section className="about-info">
