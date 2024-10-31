@@ -10,7 +10,7 @@ export const About = () => {
           <div className="card-style-three">
             <i class="fa-solid fa-code"></i>
             <p>
-              Soy Técnico Universitario en programación, actualmente tengo 20 años de edad. Me
+              Soy Técnico Universitario en programación, actualmente tengo 21 años de edad. Me
               he especializado en el área de desarrollo web y desarrollo de
               aplicaciones de escritorio.
             </p>
